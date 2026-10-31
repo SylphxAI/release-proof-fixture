@@ -1,0 +1,23 @@
+version = "1"
+
+[project]
+name = "Release proof fixture"
+default_env = "production"
+
+[ci]
+merge = "optimistic"
+
+[env.PROOF_CONFIGURATION]
+value = "one"
+
+[env.PROOF_SECRET]
+from_secret = "PROOF_SECRET"
+
+[[services]]
+name = "web"
+instance_type = "micro"
+public_networking = true
+
+[services.health]
+mode = "http"
+path = "/healthz"
