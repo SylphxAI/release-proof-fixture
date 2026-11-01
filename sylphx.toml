@@ -8,7 +8,7 @@ default_env = "production"
 merge = "optimistic"
 
 [env.PROOF_CONFIGURATION]
-value = "one"
+value = "two"
 
 [env.PROOF_SECRET]
 from_secret = "PROOF_SECRET"
