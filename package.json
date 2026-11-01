@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node server.cjs",
-    "test:fast": "node --test health.test.cjs",
+    "test:fast": "node --test health.test.cjs verify-serving.test.cjs",
     "test:full": "node --test health.test.cjs source.test.cjs"
   },
   "engines": { "node": "22" }

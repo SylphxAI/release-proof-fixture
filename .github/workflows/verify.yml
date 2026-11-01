@@ -16,7 +16,7 @@ jobs:
     # Standard hosted runners are free only for this public fixture.
     if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
@@ -24,4 +24,6 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: '22'
+      - name: Observe public serving and the analysis window
+        run: node verify-serving.cjs
       - run: npm run test:full

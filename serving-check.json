@@ -1,0 +1,5 @@
+{
+  "url": "https://web-ab6c2b.sylphx.app/healthz",
+  "configuration": "one",
+  "secretSha256": "5a57c5c4b70f5950fbd635feb54406e32ac77fba5a43a3da6c4effe012ac4f29"
+}
