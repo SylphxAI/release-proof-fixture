@@ -1,1 +1,1 @@
-module.exports = Object.freeze({ version: "a", sourceInvariant: true });
+module.exports = Object.freeze({ version: "b", sourceInvariant: true });
